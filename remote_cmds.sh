@@ -10,6 +10,9 @@ if [ -z $2 ]; then
 else
     OUT_FILE="$2"
 fi
+################################################################################
+### Remove trailing spaces ###
+sed -i 's/ *$//' $CMD_FILE
 
 ################################################################################
 _send_one() {
@@ -81,6 +84,8 @@ while [ $TRY -lt 3 ]; do
     res="$?"
     if [ $res -eq 0 ]; then
         echo "*** file $CMD_FILE content sent" >> "$OUT_FILE"
+        echo "*** Clear request commands ***" >> "$OUT_FILE"
+        sed -i '{s/^mermaid REQUEST/#mermaid REQUEST/g}' "$CMD_FILE"
         echo >> "$OUT_FILE" 
         exit 0
     fi
