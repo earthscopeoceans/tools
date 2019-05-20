@@ -1,2 +1,2 @@
 # tools
-Scripts running on the MERMAID data server
+Scripts running on the MERMAID data server. Written by OSEAN SAS.
