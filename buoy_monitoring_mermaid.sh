@@ -5,7 +5,7 @@ PERIOD_s=300
 BASE="452"
 EXT=".vit"
 LIST="$HOME/.buoy_monitoring_mermaid.list"
-EMAIL="franck.hieramente@osean.fr hello@geoazur.unice.fr sebastien.bonnieux@osean.fr olivier.philippe@osean.fr mug@osean.fr fjsimons@princeton.edu jdsimon@princeton.edu"
+EMAIL="email@domain.com"
 
 ###############################################################################
 _is_known () {
