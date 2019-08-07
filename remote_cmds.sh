@@ -92,7 +92,7 @@ while [ $TRY -lt 3 ]; do
     TRY=$(( $TRY + 1 ))
     echo "*** try $TRY/3 failed for file $CMD_FILE" >> "$OUT_FILE"
 done
-echo "*** too many errors, skeeping file $CMD_FILE" >> "$OUT_FILE"
+echo "*** too many errors, skipping file $CMD_FILE" >> "$OUT_FILE"
 echo >> "$OUT_FILE" 
 exit 1
 
